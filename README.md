@@ -9,7 +9,7 @@ Este proyecto incluye un reto de programación para los nuevos candidatos a Desa
 
 ## Instrucciones para correr el proyecto
 
-Las instrucciones para correr el proyecto son las sigientes:
+Las instrucciones para correr el proyecto son las siguientes:
 
 0. Asegurarse que no esté corriendo ningún servicio en los puertos 80 y 8090 de su máquina local.
 1. Clonar el proyecto desde este repositorio: git@github.com:mmuriel/siba-coding-test.git
@@ -40,7 +40,7 @@ Es decir, hay que desarrollar un script php que lea desde el archivo de texto me
 2. Luego de tener los datos almacenados en mysql, se debe construir otro script php que  al ser ejecutado reciba dos (2) parámetros, una fecha de inicio y una fecha de cierre para definir un rango de tiempo para recuperar los programas almacenados, con los datos recuperados desde mysql, se debe escribir un documento XML que tenga la siguiente estructura de nodos:
 
 ```xml
-<programacion fecha-hora-inicio="YYYY-MM-DD HH:MM:SS">
+<programacion inicio="YYYY-MM-DD HH:MM:SS" fin="YYYY-MM-DD HH:MM:SS">
 	<evento>
 		<fecha-hora>YYYY-MM-DD HH:MM:SS</fecha-hora>
 		<titulo>Titulo del primer evento del rango de tiempo</titulo>
@@ -73,6 +73,8 @@ El documento XML resultante se debe almacenar en la carpeta public del proyecto 
 El proyecto se encuentra en la ruta: /home/sientifica/app dentro del contenedor: app
 
 3. Queda a su criterio la estructura de la entidad (tabla) o entidades (tablas) en mysql para persistir los datos. Lo que si debe usar es la base base de datos ya creada que se llama: siba
+
+4. MUY Importante, si usted no alcanza a terminar todo el proyecto o no está seguro de alguna solución implementanda, no se preocupe, reporte el trabajo realizado.
 
 ... Buena programación ;-)
 
