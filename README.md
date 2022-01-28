@@ -39,6 +39,7 @@ Es decir, hay que desarrollar un script php que lea desde el archivo de texto me
 
 2. Luego de tener los datos almacenados en mysql, se debe construir otro script php que  al ser ejecutado reciba dos (2) parámetros, una fecha de inicio y una fecha de cierre para definir un rango de tiempo para recuperar los programas almacenados, con los datos recuperados desde mysql, se debe escribir un documento XML que tenga la siguiente estructura de nodos:
 
+<!-- >> listview-first-look -->
 <programacion fecha-hora-inicio="YYYY-MM-DD HH:MM:SS">
 	<evento>
 		<fecha-hora>YYYY-MM-DD HH:MM:SS</fecha-hora>
@@ -54,6 +55,7 @@ Es decir, hay que desarrollar un script php que lea desde el archivo de texto me
 		<sinopsis>Sinopsis del evento</sinopsis>
 	</evento>
 </programacion>
+<!-- << listview-first-look -->
 
 El documento XML resultante se debe almacenar en la carpeta public del proyecto con el nombre de programacion.xml de tal manera que pueda ser consultado vía web. (apuntando el navegador a la dirección: http://localhost/programacion.xml)
 
