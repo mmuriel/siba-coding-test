@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  app: 
+    image: maomuriel/ubunt_20_04-php74-apache2
+    container_name: app
+    ports:
+      - "80:80"
+    volumes: 
+      - "/path/to/project:/home/sientifica/app"
+    depends_on: 
+      - "db"
+    links: 
+      - "db"
+  db:
+    image: mariadb:10.2
+    container_name: db
+    environment:
+      - "MYSQL_ROOT_PASSWORD=PesoTalloAvionCamino3310*"
+    volumes:
+      - "/path/to/project/mysql-data/siba.coding.test:/var/lib/mysql"
+    ports:
+      - "3306"
+  phpmia:
+    image: "phpmyadmin/phpmyadmin"
+    container_name: phpmia
+    environment:
+      - "PMA_HOST=db"
+    ports:
+      - "8090:80"
+    depends_on: 
+      - "db"
+    links: 
+      - "db"
