@@ -2,10 +2,14 @@
 
 Este proyecto incluye un reto de programación para los nuevos candidatos a Desarrollador Backend Junior para la empresa SIBA S.A.
 
+
 ## Requisitos para correr el proyecto
 
-- Git
-- Docker
+Para realizar la siguiente pueba usted debe contar con las siguientes herramientas instaladas en su equipo:
+
+- Git (https://git-scm.com/)
+- Docker (https://www.docker.com/products/docker-desktop)
+
 
 ## Instrucciones para correr el proyecto
 
